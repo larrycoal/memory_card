@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+      integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./memory.css" />
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <header class="header_wrapper">
+      <nav class="container">
+        <h2>Memory Game</h2>
+        <div><span>Player:</span><span id="player_name">No player</span></div>
+      </nav>
+    </header>
+    <main class="main_wrapper">
+      <section id="tabs">
+        <ul>
+          <li><a href="#tabs-1">Play Game</a></li>
+          <li><a href="#tabs-2">View Rules</a></li>
+          <li><a href="#tabs-3">Settings</a></li>
+        </ul>
+        <div class="nfo">
+          <span>Highest Score:</span>
+          <span id="highest_score">0%</span>
+        </div>
+        <div id="tabs-1">
+          <div id="cardWrapper" class="card_wrapper">
+            <div class="welcome_card">
+              <h2>WELCOME!</h2>
+              <p>
+                Test your brain with memory game; a fun game to test your memory
+                strength.
+              </p>
+              <p>Click play now to setup new game</p>
+              <button id="playnow">Play Now</button>
+            </div>
+          </div>
+        </div>
+        <div id="tabs-2">
+          <section class="rules_wrapper">
+            <fieldset>
+              <legend>How to play the Memory game</legend>
+              <ul>
+                <li>
+                  The cards are placed face down. Each card has a matching card.
+                </li>
+                <li>For each turn, the player select two cards.</li>
+                <li>If the cards match, they are removed from the board.</li>
+                <li>
+                  If the cards don't match, they are turned face down again.
+                </li>
+                <li>
+                  At the end of the game, the player receives a score based on
+                  the number of correct selections that were made.
+                </li>
+              </ul>
+            </fieldset>
+          </section>
+        </div>
+        <div id="tabs-3">
+          <section class="settings_wrapper container">
+            <div>
+              <label for="name">Player Name:</label>
+              <input id="name" type="text" />
+            </div>
+            <div>
+              <label for="num_cards">Number of cards:</label>
+              <select id="num_cards">
+                <option>48</option>
+                <option>40</option>
+                <option>32</option>
+                <option>24</option>
+                <option>16</option>
+                <option>8</option>
+              </select>
+            </div>
+            <button id="save_btn">Save Settings</button>
+          </section>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+      integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./library_settings.js"></script>
+    <script src="library_cards.js" type="module"></script>
+
+    <script src="library_card.js" type="module"></script>
+    <script src="main.js" type="module"></script>
+
+    <script src="./resources.js"></script>
+  </body>
+</html>
