@@ -1,4 +1,5 @@
-## MEMORY CARD GAME
+
+# MEMORY CARD GAME
 
 1 The cards are placed face down. Each card has a matching card.
 2 For each turn, the player select two cards.
