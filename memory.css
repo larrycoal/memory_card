@@ -203,4 +203,7 @@ select {
     width: 100%;
     gap: 10px;
   }
+  .card img{
+    height: 100px;
+  }
 }
