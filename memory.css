@@ -212,4 +212,13 @@ select {
     gap: 10px;
     padding: 1rem;
   }
+  .result_wrapper{
+    margin: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .result_wrapper p:nth-child(2){
+  font-size: 1rem;
+  }
+
 }
