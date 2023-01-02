@@ -194,3 +194,13 @@ select {
   margin: 1rem 0;
   cursor: pointer;
 }
+@media only screen and (max-width: 600px) {
+  .main_wrapper{
+    padding: 1rem;
+  }
+  .settings_wrapper div{
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+}
