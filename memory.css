@@ -79,8 +79,8 @@ nav ul a {
   width: 100%;
   cursor: pointer;
 }
-.rotate img{
-    opacity: 0;
+.rotate img {
+  opacity: 0;
 }
 .result_wrapper {
   padding: 20px;
@@ -101,9 +101,9 @@ nav ul a {
   font-size: 1.5rem;
   color: rgb(135 130 130);
 }
-.result_wrapper div{
-    text-align: center;
-    margin: 1rem 0;
+.result_wrapper div {
+  text-align: center;
+  margin: 1rem 0;
 }
 .result_wrapper div #result {
   color: black;
@@ -112,7 +112,7 @@ nav ul a {
   margin-left: 0 1rem;
 }
 .result_wrapper #score {
-  margin-right:15px;
+  margin-right: 15px;
   color: black;
 }
 .result_wrapper #play_again {
@@ -124,13 +124,13 @@ nav ul a {
   width: fit-content;
   margin: 0 auto;
 }
-.nfo{
-    display: flex;
-    width: fit-content;
-    gap: 10px;
-    padding: 10px;
-    align-items: center;
-    font-size: 1.3rem;
+.nfo {
+  display: flex;
+  width: fit-content;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+  font-size: 1.3rem;
 }
 /* =============================
 Rules css
@@ -195,16 +195,21 @@ select {
   cursor: pointer;
 }
 @media only screen and (max-width: 600px) {
-  .main_wrapper{
+  .main_wrapper {
     padding: 1rem;
   }
-  .settings_wrapper div{
+  .settings_wrapper div {
     flex-direction: column;
     width: 100%;
     gap: 10px;
   }
-  .card img{
+  .card img {
     height: 120px;
     width: 100px;
+  }
+  .card_wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    padding: 1rem;
   }
 }
